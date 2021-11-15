@@ -6,8 +6,6 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <!--[if mso]>
   <noscript>
     <xml>
@@ -30,10 +28,6 @@
  * We use a custom, email-specific CSS reset, instead
  * of Tailwind's web-optimized base.
 */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
-
-
 body {
   margin: 0;
   width: 100%;
@@ -60,11 +54,11 @@ img {
 .mb-16 {
   margin-bottom: 16px !important;
 }
-.mb-4 {
-  margin-bottom: 4px !important;
-}
 .mb-24 {
   margin-bottom: 24px !important;
+}
+.mb-4 {
+  margin-bottom: 4px !important;
 }
 .block {
   display: block !important;
@@ -75,18 +69,20 @@ img {
 .table {
   display: table !important;
 }
-
+.hidden {
+  display: none !important;
+}
+.h-14 {
+  height: 14px !important;
+}
 .h-32 {
   height: 32px !important;
 }
-.h-64 {
-  height: 64px !important;
+.h-48 {
+  height: 48px !important;
 }
 .h-px {
   height: 1px !important;
-}
-.h-48 {
-  height: 48px !important;
 }
 .w-full {
   width: 100% !important;
@@ -97,8 +93,8 @@ img {
 .w-48 {
   width: 48px !important;
 }
-.w-1\/2 {
-  width: 50% !important;
+.w-1\/3 {
+  width: 33.333333% !important;
 }
 .max-w-full {
   max-width: 100% !important;
@@ -112,32 +108,17 @@ img {
 .border {
   border-width: 1px !important;
 }
-.bg-gray-100 {
-  background-color: #f3f4f6 !important;
-}
-.bg-indigo-800 {
-  background-color: #3730a3 !important;
-}
 .bg-white {
   background-color: #ffffff !important;
 }
-.bg-gray-300 {
-  background-color: #d1d5db !important;
+.bg-gray-100 {
+  background-color: #f3f4f6 !important;
 }
-.bg-primary {
-  background-color: #24139F !important;
+.bg-blue-500 {
+  background-color: #3b82f6 !important;
 }
 .bg-gray-200 {
   background-color: #e5e7eb !important;
-}
-.bg-cover {
-  background-size: cover !important;
-}
-.bg-top {
-  background-position: top !important;
-}
-.bg-no-repeat {
-  background-repeat: no-repeat !important;
 }
 .p-0 {
   padding: 0 !important;
@@ -156,26 +137,12 @@ img {
   padding-left: 24px !important;
   padding-right: 24px !important;
 }
-.px-48 {
-  padding-left: 48px !important;
-  padding-right: 48px !important;
-}
-.py-24 {
-  padding-top: 24px !important;
-  padding-bottom: 24px !important;
-}
 .py-32 {
   padding-top: 32px !important;
   padding-bottom: 32px !important;
 }
-.pb-32 {
-  padding-bottom: 32px !important;
-}
-.pr-16 {
-  padding-right: 16px !important;
-}
-.pl-16 {
-  padding-left: 16px !important;
+.pb-12 {
+  padding-bottom: 12px !important;
 }
 .text-left {
   text-align: left !important;
@@ -186,29 +153,29 @@ img {
 .font-sans {
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif !important;
 }
-.text-4xl {
-  font-size: 36px !important;
+.text-xl {
+  font-size: 20px !important;
 }
 .text-lg {
   font-size: 18px !important;
 }
-.text-base {
-  font-size: 16px !important;
-}
 .text-sm {
   font-size: 14px !important;
 }
+.text-base {
+  font-size: 16px !important;
+}
 .text-2xl {
   font-size: 24px !important;
-}
-.text-xl {
-  font-size: 20px !important;
 }
 .text-xs {
   font-size: 12px !important;
 }
 .font-semibold {
   font-weight: 600 !important;
+}
+.font-light {
+  font-weight: 300 !important;
 }
 .uppercase {
   text-transform: uppercase !important;
@@ -218,6 +185,9 @@ img {
 }
 .leading-full {
   line-height: 100% !important;
+}
+.leading-44 {
+  line-height: 44px !important;
 }
 .leading-64 {
   line-height: 64px !important;
@@ -231,15 +201,14 @@ img {
 .text-white {
   color: #ffffff !important;
 }
-.text-gray-500 {
-  color: #6b7280 !important;
-}
 .text-gray-800 {
   color: #1f2937 !important;
 }
-
 .text-black {
   color: #000000 !important;
+}
+.text-blue-500 {
+  color: #3b82f6 !important;
 }
 .text-gray-600 {
   color: #4b5563 !important;
@@ -269,28 +238,18 @@ img {
 .hover\:bg-blue-600:hover {
   background-color: #2563eb !important;
 }
-.hover\:text-blue-400:hover {
-  color: #60a5fa !important;
-}
 .hover\:underline:hover {
   text-decoration: underline !important;
 }
 .hover\:no-underline:hover {
   text-decoration: none !important;
 }
-
-.primary {color: #24139F !important;}
-
-.text-primary {
-  color: #24139F !important;
-  font-size: 58px;
-  font-weight: 900;
+.hover\:opacity-90:hover {
+  opacity: 0.9 !important;
 }
-
-
 @media (max-width: 600px) {
-  .sm\:inline-block {
-    display: inline-block !important;
+  .sm\:hidden {
+    display: none !important;
   }
   .sm\:h-32 {
     height: 32px !important;
@@ -317,331 +276,311 @@ img {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  .sm\:pb-32 {
-    padding-bottom: 32px !important;
-  }
-  .sm\:leading-40 {
-    line-height: 40px !important;
-  }
   .sm\:leading-32 {
     line-height: 32px !important;
   }
-
-  .hidden-mobile {
-  display: none !important;
-}
-
-.text-primary {
-  color: #24139F !important;
-  font-size: 42px;
-}
-
-
 }
 </style>
   
 </head>
-<body class="bg-white" style="max-width: 600px; margin: auto;" >
-
-  <!--top bar-->
-    <div class="hidden-mobile text-center"  style="padding:10px 0; font:12px/14px Arial, Helvetica, sans-serif; color:#000;">Thousands of prices reduced plus many new items <a href="https://www.fragrancex.com" title="See Online" target="_blank" style="text-decoration:underline; color:#000;">See online</a>
-     </div>
+<body class="bg-white">
+  
+    <div class="hidden">Thousands of prices reduced plus many new items
+      <a href="https://www.fragrancex.com" title="See Online" target="_blank" style="text-decoration:underline; color:#000000;">See online</a> </div>
   <div role="article" aria-roledescription="email" aria-label="The Website Weekly Newsletter" lang="en">
     
     <table class="w-full font-sans" cellpadding="0" cellspacing="0" role="presentation">
       <tr>
         <td align="center" class="bg-white sm:px-16">
-    
-        <table class="w-600 sm:w-full" cellpadding="0" cellspacing="0" role="presentation">
-            
-          
-          <!--header-->
+          <table class="w-600 sm:w-full" cellpadding="0" cellspacing="0" role="presentation">
             <tr>
-              <td class=" sm:py-32 sm:px-24 text-center">
-                <a  href="https://www.fragrancex.com/" target="_blank">
-                  <img src="https://img.fragrancex.com/emails/content/frgx_logo/logo-purple.png" width="195" alt="fragrancex"
-                       style="margin:15px 0; width:210px; font:20px/24px Arial, Helvetica, sans-serif; color:#000; vertical-align:top;" title="FragranceX.com" >
+              <td class="p-48 sm:py-32 sm:px-24 text-center">
+                <a href="https://www.fragrancex.com/">
+                  <img src="https://img.fragrancex.com/emails/content/frgx_logo/logo-purple.png" width="195" alt="FragranceX" style="margin:15px 0; 
+                         width:210px; 
+                         font:20px/24px Arial, Helvetica, 
+                         sans-serif; color:#000000; 
+                         vertical-align:top;" title="FragranceX.com">
                 </a>
               </td>
             </tr>
-            <!-- Start Link -->
-            <tr>
-              <td>
-                <table style="margin-bottom: 14px;" align="center"  cellpadding="0" cellspacing="0">
-                  <tr>
-                    <td class="w-48 sm:w-16"></td>
-                    <td style="font:bold 15px/17px Arial, Helvetica, sans-serif; color:#000;">
-                      <a href="https://www.fragrancex.com/products/_cid_perfume__category.html" title="Women's Perfume" target="_blank" style="text-decoration:none; color:#000;">WOMEN’S PERFUME</a>
-                    </td>
-                    <td width="30"></td>
-                    <td class="hidden-mobile" width="100"></td>
-                    <td style="font:bold 15px/17px Arial, Helvetica, sans-serif; color:#000;">
-                      <a href="https://www.fragrancex.com/products/_cid_cologne__category.html" title="Men's Cologne" target="_blank" style="text-decoration:none; color:#000;">MEN’S COLOGNE</a>
-                    </td>
-                   <td class="w-48 sm:w-16"></td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+
+          <!-- Women's and Men's products links -->
+
+          <tr>
+            <td>
+              <table style="margin-bottom: 14px;" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                <tr>
+                  <td class="w-48 sm:w-16"></td>
+                  <td style="font:bold 15px/17px Arial, Helvetica, sans-serif; color:#000000;">
+                    <a href="https://www.fragrancex.com/products/_cid_perfume__category.html" title="Women's Perfume" target="_blank" style="text-decoration:none; color:#000000;">WOMEN’S PERFUME</a>
+                  </td>
+                  <td width="30"></td>
+                  <td class="sm:hidden" width="100"></td>
+                  <td style="font:bold 15px/17px Arial, Helvetica, sans-serif; color:#000000;">
+                    <a href="https://www.fragrancex.com/products/_cid_cologne__category.html" title="Men's Cologne" target="_blank" style="text-decoration:none; color:#000000;">MEN’S COLOGNE</a>
+                  </td>
+                 <td class="w-48 sm:w-16"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
           <!-- *****HERO**** -->
-            <tr>
-              <td class="text-center" style="padding: 30px 0; border:1px solid #E5E5E5;">
+          <tr>
+            <td class=" text-center" style="padding: 30px 0; border:1px solid #e5e5e5;">
+              
+              
                 
-                
-                  
-                  <table class="w-full" cellpadding="0" cellspacing="0" role="presentation">
-                    <tr>
-                      <td class="w-48 sm:w-16"></td>
-                      <td>
-                        <p class="m-0  text-xl leading-44" style="font-family: 'Montserrat', sans-serif;">Limited time only!</p>
-                        <h1 class="m-0 mb-16 text-primary" 
-                        style="padding:0 0px; font-family: 'Montserrat', sans-serif;
-                        ">EXTRA 15% OFF</h1>
-                        
-                      <!-- button primary -->  
-                        <div class="leading-full">
-                          <a href="https://www.fragrancex.com/" title="Redeem Coupon" target="_blank" 
-                          class="inline-block font-semibold text-center no-underline text-white bg-primary hover:bg-indigo-700" 
-                          style="padding:24px 38px; font-family: 'Montserrat', sans-serif; font-size: 34px;">
-                            <!--[if mso]><i style="letter-spacing: 24px; mso-font-width: -100%; mso-text-raise:30px;">&#8202;</i><![endif]-->
-                            <span style="mso-text-raise:36px;"
-                            
-                            >REDEEM COUPON</span>
-                            <!--[if mso]><i style="letter-spacing: 24px; mso-font-width: -100%;">&#8202;</i><![endif]-->
-                          </a>
-                        </div>
-                      </td>
-                      <td class="w-48 sm:w-16"></td>
-                    </tr>
-                  </table>
-                  <div class="leading-64">
-                    <a style="text-decoration:none;" href="https://www.fragrancex.com" target="_blank">
-                      <img src="images/hero-1.png" alt="Perfume bottles Spring Sales" width="600" height="807" 
-                          style="
-                          z-index: -10; 
-                          max-width:700px; 
-                          
-                          height: auto;
-                          margin-top: -14px;
-                          
-                          font-size: 1.25rem;
-                          font-family:  'Montserrat' sans-serif; 
-                          color:#000; 
-                          vertical-align:top;
-                          line-height: 6rem;" 
-                          />
-                    </a>
-                  </div>
-
-                  <table align="center">
+                <table class="w-full" cellpadding="0" cellspacing="0" role="presentation">
                   <tr>
                     <td class="w-48 sm:w-16"></td>
-                      <td>
-                        <a class="text-center text-lg font-semibold primary" 
-                        href="https://www.fragrancex.com" title="Redeem Your Coupon Today" target="_blank" style="text-decoration:underline; font-family: 'Montserrat', sans-serif;">Redeem Your Coupon Today</a>
+                    <td>
+                      <p class="m-0  text-xl leading-44" style="font-family: 'Montserrat', sans-serif;">Limited time only!</p>
+                      <h1 class="m-0 mb-16 text-primary" style="padding:0 0px; font-family: 'Montserrat', sans-serif;
+                      ">EXTRA 15% OFF</h1>
                       
-                        
-                      </td>
-                      <td class="w-48 sm:w-16"></td>
-
+                    <!-- button primary -->  
+                      <div class="leading-full">
+                        <a href="https://www.fragrancex.com/" title="Redeem Coupon" target="_blank" class="inline-block font-semibold text-center no-underline text-white hover:bg-indigo-700" style="padding:24px 38px; font-family: 'Montserrat', sans-serif; 
+                               font-size: 34px;
+                               background-color: #24139f;">
+                          <!--[if mso]><i style="letter-spacing: 24px; mso-font-width: -100%; mso-text-raise:30px;">&#8202;</i><![endif]-->
+                          <span style="mso-text-raise:36px;">REDEEM COUPON</span>
+                          <!--[if mso]><i style="letter-spacing: 24px; mso-font-width: -100%;">&#8202;</i><![endif]-->
+                        </a>
+                      </div>
+                    </td>
+                    <td class="w-48 sm:w-16"></td>
                   </tr>
-
                 </table>
+                <div class="leading-64">
+                  <a style="text-decoration:none;" href="https://www.fragrancex.com" target="_blank">
+                    <img src="images/hero-1.png" alt="Perfume bottles Spring Sales" width="600" height="807" style="
+                        z-index: -10; 
+                        max-width:700px; 
+                        
+                        height: auto;
+                        margin-top: -20px;
+                        line-height: 5rem;
+                        
+                        font-family: 'Montserrat', sans-serif; vertical-align:top;
+                        font-size: 1.25rem;">
+                  </a>
+                </div>
 
-                  
+                <table align="center" cellpadding="0" cellspacing="0" role="presentation">
+                <tr>
+                  <td class="w-48 sm:w-16"></td>
+                    <td>
+                      <a class="text-center text-lg font-semibold primary" href="https://www.fragrancex.com" title="Redeem Your Coupon Today" target="_blank" style="text-decoration:underline; font-family: 'Montserrat', sans-serif;">Redeem Your Coupon Today</a>
+                    
+                      
+                    </td>
+                    <td class="w-48 sm:w-16"></td>
 
+                </tr>
 
-                
-                        <!--[if mso]></div></v:textbox></v:rect><![endif]-->
+              </table>
 
-              </td>
+                       <!--[if mso]></div></v:textbox></v:rect><![endif]-->
+
+            </td>
+          </tr>
+
+       
+            <tr>
+              <td class="h-14"></td>
             </tr>
 
             <!-- CATALOGUE -->
             <tr>
               <td class="h-32">
-                <div class="text-center text-lg"  style="padding:20px 0; font-family: 'Montserrat', sans-serif;">
-                  <strong> Spring Sale Exclusives  </strong><a href="https://www.fragrancex.com" title="See Online" target="_blank" style="text-decoration:underline; color:#000;">View all</a><span class="no-underline" style="text-decoration: none!important; cursor: pointer;"> →</span>
+                <div class="text-center text-lg" style="padding:20px 0; font-family: 'Montserrat', sans-serif;">
+                  <strong> Spring Sale Exclusives  </strong><a href="https://www.fragrancex.com" title="See Online" target="_blank" style="text-decoration:underline; color:#000000;">View all</a><span class="no-underline" style="text-decoration: none!important; cursor: pointer;"> →</span>
                 </div>
               </td>
             </tr>
 
-            
+
             <tr>
-              <td class="w-full p-24 sm:px-0 text-left">
+              <td class="w-full p-24 sm:px-0 text-left">  <!--Products -->
+
                 <table class="w-full" cellpadding="0" cellspacing="0" role="presentation">
                   <tr>
+
+
                     <td class="w-1/3">
                       <table class="w-full" cellpadding="0" cellspacing="0" role="presentation">
                         <tr>
                           <td align="center">
                             <a style="text-decoration:none;" href="https://www.fragrancex.com/products/_cid_perfume-am-lid_a-am-pid_60682w__products.html" target="_blank">
-                              <img src="images/Fresh-Couture-Perfume.png" alt="Alien Thierry Mugler" width="168" height="186" style="width:200px; max-width:200px; font:14px/18px Arial, Helvetica, sans-serif; color:#000; vertical-align:top;" title="Fresh Couture" />
+                              <img src="images/Fresh-Couture-Perfume.png" alt="Alien Thierry Mugler" width="168" height="186" style="width:200px; max-width:200px; font:14px/18px Arial, Helvetica, sans-serif; color:#000000; vertical-align:top;" title="Fresh Couture">
                             </a>
-                            <a class="text-center" href="https://www.fragrancex.com/products/_cid_perfume-am-lid_a-am-pid_60682w__products.html" title="Fresh Couture" target="_blank" 
-                            style="text-decoration:underline; color:#000; text-align: center;">Fresh Couture</a>
+                            <a class="text-center" href="https://www.fragrancex.com/products/_cid_perfume-am-lid_a-am-pid_60682w__products.html" title="Fresh Couture" target="_blank" style="text-decoration:underline; color:#000000; text-align: center;">Fresh Couture</a>
                           </td>
                         </tr>
                       </table>
                     </td>
+
+
                     <td class="w-1/3  ">
                       <table class="w-full" cellpadding="0" cellspacing="0" role="presentation">
                         <tr>
                           <td align="center">
                             <a style="text-decoration:none;" href="https://www.fragrancex.com/products/_cid_cologne-am-lid_1-am-pid_63997m__products.html" target="_blank">
-                              <img src="images/Cool-Water-Perfume.png" alt="Cool Water" width="168" height="186" style="width:168px; max-width:168px; font:14px/18px Arial, Helvetica, sans-serif; color:#000; vertical-align:top;" title="Cool Water" />
+                              <img src="images/Cool-Water-Perfume.png" alt="Cool Water" width="168" height="186" style="width:168px; max-width:168px; font:14px/18px Arial, Helvetica, sans-serif; color:#000000; vertical-align:top;" title="Cool Water">
                             </a>
-                            <a href="https://www.fragrancex.com/products/_cid_cologne-am-lid_1-am-pid_63997m__products.html" title="Cool Water" target="_blank" style="text-decoration:underline; color:#000;">Cool Water</a>
+                            <a href="https://www.fragrancex.com/products/_cid_cologne-am-lid_1-am-pid_63997m__products.html" title="Cool Water" target="_blank" style="text-decoration:underline; color:#000000;">Cool Water</a>
                           </td>
                         </tr>
                       </table>
                     </td>
+
+
                     <td class="w-1/3  ">
                       <table class="w-full" cellpadding="0" cellspacing="0" role="presentation">
                         <tr>
                           <td align="center">
                             <a style="text-decoration:none;" href="https://www.fragrancex.com/products/_cid_perfume-am-lid_v-am-pid_69189w__products.html" target="_blank">
-                              <img src="images/Bright-Crystal-Perfume.png" alt="Bright Crystal Versace" width="168" height="186" style="width:168px; max-width:168px; font:14px/18px Arial, Helvetica, sans-serif; color:#000; vertical-align:top;" title="Bright Crystal Versace" />
+                              <img src="images/Bright-Crystal-Perfume.png" alt="Bright Crystal Versace" width="168" height="186" style="width:168px; max-width:168px; font:14px/18px Arial, Helvetica, sans-serif; color:#000000; vertical-align:top;" title="Bright Crystal Versace">
                             </a>
-                            <a href="https://www.fragrancex.com/products/_cid_perfume-am-lid_v-am-pid_69189w__products.html" title="Bright Crystal" target="_blank" style="text-decoration:underline; color:#000;">Bright Crystal</a>
+                            <a href="https://www.fragrancex.com/products/_cid_perfume-am-lid_v-am-pid_69189w__products.html" title="Bright Crystal" target="_blank" style="text-decoration:underline; color:#000000;">Bright Crystal</a>
                           </td>
                         </tr>
                       </table>
                     </td>
+
+
                   </tr>
                 </table>
+
               </td>
             </tr>
 
+            <!-- Start text blocks -->
 
-
-            <!-- two columns container -->
-            <table class="w-full" cellpadding="0" cellspacing="0" role="presentation">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="bg-gray-300 h-px leading-px">‌</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
             <tr>
 							<td class="pt-13 plr-10" style="padding:28px 36px 23px 27px;">
-								<table width="100%" cellpadding="0" cellspacing="0">
-									<tbody>
-                   <tr>
+								<table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+									<tr>
 										<td class="pb-12" style="padding:0 0 13px;">
-											<table width="100%" cellpadding="0" cellspacing="0">
-												<tbody><tr>
-													<td class="wi-100p" align="center"><a href="https://www.fragrancex.com" target="_blank"><img src="images/img-04.png" alt="100% Authentic and Secure" width="263" height="131" style="width:263px; max-width:263px; font:14px/18px Arial, Helvetica, sans-serif; color:#000; vertical-align:top;" title="100% Authentic and Secure"></a>
+											<table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+												<tr>
+													<td class="wi-100p" align="center"><a href="https://www.fragrancex.com" target="_blank"><img src="images/img-04.png" alt="100% Authentic and Secure" width="263" height="131" style="width:263px; max-width:263px; font:14px/18px Arial, Helvetica, sans-serif; color:#000000; vertical-align:top;" title="100% Authentic and Secure"></a>
 													</td>
 													<td class="w-13" width="16"></td>
 													<td width="1" style="background:#e5e5e5;"></td>
 													<td class="w-13" width="25"></td>
-													<td class="wi-100p" align="center"><a href="https://www.instagram.com/fragrancex/" target="_blank"><img src="images/img-05.png" alt="@fragrancex / Trends and inspo / Follow Us" width="237" height="133" style="width:237px; max-width:237px; font:14px/18px Arial, Helvetica, sans-serif; color:#000; vertical-align:top;" title="Follow Us on Instagram"></a>
+													<td class="wi-100p" align="center"><a href="https://www.instagram.com/fragrancex/" target="_blank"><img src="images/img-05.png" alt="@fragrancex / Trends and inspo / Follow Us" width="237" height="133" style="width:237px; max-width:237px; font:14px/18px Arial, Helvetica, sans-serif; color:#000000; vertical-align:top;" title="Follow Us on Instagram"></a>
 													</td>
 												</tr>
-											</tbody>
-                    </table>
+											</table>
 										</td>
 									</tr>
 									<tr>
-										<td class="wi-100p plr-20" align="center" style="padding:0 0 0 20px;"><a href="https://www.fragrancex.com" target="_blank"><img src="images/img-06.png" alt="BUY NOW, PAY LATER. INSTALLMENTS BY afterpay" width="360" height="48" style="width:360px; font:14px/18px Arial, Helvetica, sans-serif; color:#000; vertical-align:top;"></a>
+										<td class="wi-100p plr-20" align="center" style="padding:0 0 0 20px;"><a href="https://www.fragrancex.com" target="_blank">
+                      <img class="hover:opacity-90" src="images/img-06.png" alt="BUY NOW, PAY LATER. INSTALLMENTS BY afterpay" width="360" height="48" style="width:360px; font:14px/18px Arial, Helvetica, sans-serif; color:#000000; vertical-align:top;"></a>
 										</td>
 									</tr>
-								</tbody>
-                </table>
+								</table>
 							</td>
 						</tr>
 
 
             <!--America's Largest Fragance Outlet-->
-
+  
             <tr>
-							<td class="py-16 primary text-xl font-light" align="center" 
-                  style="padding:0 15px 20px; 
+              <td class="py-16 primary text-xl font-light" align="center" style="padding:0 15px 20px; 
                   font-family: 'Montserrat', sans-serif;">
-								America’s Largest Fragrance Outlet
-							</td>
-						</tr>
+                America’s Largest Fragrance Outlet
+              </td>
+            </tr>
 
-           <!--Footer-->
-           <tr>
-            <td style="padding:18px 12px 30px;">
-              <table style="max-width: 300px;" width="100%" align="center" cellpadding="0" cellspacing="0">
-                
-                <!--Social Media Icons-->
-                <tr>
 
-                  
-
-                  <td>
-                      <a style="text-decoration:none;" href="http://facebook.com/perfume" target="_blank">
-                          <img src="images/ico-facebook.png" alt="facebook" width="33" height="33" style="width:44px; font-family: 'Montserrat', sans-serif; color:#000; vertical-align:top;" title="Follow us on Facebook" />
-                      </a>
-                  </td>
-
-                  <td width="34"></td>
-
-                  <td>
-                    <a style="text-decoration:none;" href="http://twitter.com/fragrancex" target="_blank">
-                      <img src="images/ico-twitter.png" alt="twitter" width="33" height="33" style="width:44px; font-family: 'Montserrat', sans-serif; color:#000; vertical-align:top;" title="Follow us on Twitter" />
-                    </a>
-                  </td>
-
-                  <td width="34"></td>
-
-                  <td>
-                    <a style="text-decoration:none;" href="https://www.youtube.com/user/fragrancexcom/" target="_blank">
-                      <img src="images/ico-youtube.png" alt="youtube" width="33" height="33" style="width:44px; font-family: 'Montserrat', sans-serif; color:#000; vertical-align:top;" title="Follow us on Youtube" />
-                    </a>
-                  </td>
-
-                  <td width="34"></td>
-
-                  <td>
-                    <a style="text-decoration:none;" href="http://pinterest.com/fragrancex/" target="_blank">
-                      <img src="images/ico-pinterest.png" alt="pinterest" width="33" height="33" style="width:44px; font-family: 'Montserrat', sans-serif; color:#000; vertical-align:top;" title="Follow us on Pinterest" />
-                    </a>
-                  </td>
-
-                  <td width="34"></td>
+                 <!--Footer-->
+                 <tr>
+                  <td style="padding:18px 12px 30px;">
+                    <table style="max-width: 300px;" width="100%" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                      
+                      <!--Social Media Icons-->
+                      <tr>
+      
                         
-                  <td>
-                    <a style="text-decoration:none;" href="https://www.instagram.com/fragrancex/" target="_blank">
-                      <img src="images/ico-instagram.png" alt="instagram" width="33" height="33" style="width:44px; font-family: 'Montserrat', sans-serif; color:#000; vertical-align:top;" title="Follow us on Instagram" />
-                    </a>
+      
+                        <td>
+                            <a style="text-decoration:none;" href="http://facebook.com/perfume" target="_blank">
+                                <img src="images/ico-facebook.png" alt="facebook" width="33" height="33" style="width:44px; font-family: 'Montserrat', sans-serif; color:#000000; vertical-align:top;" title="Follow us on Facebook">
+                            </a>
+                        </td>
+      
+                        <td width="34"></td>
+      
+                        <td>
+                          <a style="text-decoration:none;" href="http://twitter.com/fragrancex" target="_blank">
+                            <img src="images/ico-twitter.png" alt="twitter" width="33" height="33" style="width:44px; font-family: 'Montserrat', sans-serif; color:#000000; vertical-align:top;" title="Follow us on Twitter">
+                          </a>
+                        </td>
+      
+                        <td width="34"></td>
+      
+                        <td>
+                          <a style="text-decoration:none;" href="https://www.youtube.com/user/fragrancexcom/" target="_blank">
+                            <img src="images/ico-youtube.png" alt="youtube" width="33" height="33" style="width:44px; font-family: 'Montserrat', sans-serif; color:#000000; vertical-align:top;" title="Follow us on Youtube">
+                          </a>
+                        </td>
+      
+                        <td width="34"></td>
+      
+                        <td>
+                          <a style="text-decoration:none;" href="http://pinterest.com/fragrancex/" target="_blank">
+                            <img src="images/ico-pinterest.png" alt="pinterest" width="33" height="33" style="width:44px; font-family: 'Montserrat', sans-serif; color:#000000; vertical-align:top;" title="Follow us on Pinterest">
+                          </a>
+                        </td>
+      
+                        <td width="34"></td>
+                              
+                        <td>
+                          <a style="text-decoration:none;" href="https://www.instagram.com/fragrancex/" target="_blank">
+                            <img src="images/ico-instagram.png" alt="instagram" width="33" height="33" style="width:44px; font-family: 'Montserrat', sans-serif; color:#000000; vertical-align:top;" title="Follow us on Instagram">
+                          </a>
+                        </td>
+      
+              
+                        
+                      </tr>
+                          
+                    </table>
                   </td>
-
-        
-                  
                 </tr>
-                    
-              </table>
-            </td>
-          </tr>
 
-
-          <tr>
-            <td style="padding:18px 25px 30px;">
-              <table width="100%" align="center" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td align="center" class="text-sm"
-                  style="font-family: 'Arial', sans-serif; color:#5f5f5f;"> *Get Both Free Shipping Plus 15% Off when ordering over $35 in USA.<br />
-                    This offer cannot be combined with any other offer. <br />
-                    <br />
-                    <a style="text-decoration:underline; color:#5f5f5f;" href="http://www.fragrancex.com/_coupon_free__index.html" target="_blank">Free shipping in USA over $35 or no minimum with coupon code FREE</a><br />
-                    <br />
-                    Free Shipping in most countries<br />
-                    <br />
-                    We’re here to help, if you have questions please visit our customer service section. Contact us by email at <a style="text-decoration:none; color:#5f5f5f;" href="mailto:support@fragrancex.com" target="_blank">support@fragrancex.com</a>, manage your email preferences <a style="text-decoration:none; color:#5f5f5f;" href="%%!manage_url%%" target="_blank">here</a> or <a style="text-decoration:none; color:#5f5f5f;" href="%%!unsubscribe_url%%" target="_blank">unsubscribe</a>. Toll&nbsp;free at <a style="text-decoration:none; color:#5f5f5f;" href="tel:18885573738" target="_blank">1-888-557-3738</a> or outside the USA call <a style="text-decoration:none; color:#5f5f5f;" href="tel:0017184826970" target="_blank">001-718-482-6970</a><br />
-                  %%!account_address%% </td>
+                  <td style="padding:18px 25px 30px;">
+                    <table width="100%" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                      <tr>
+                        <td align="center" class="text-sm" style="font-family: 'Arial', sans-serif; color:#5f5f5f;"> *Get Both Free Shipping Plus 15% Off when ordering over $35 in USA.<br>
+                          This offer cannot be combined with any other offer. <br>
+                          <br>
+                          <a style="text-decoration:underline; color:#5f5f5f;" href="http://www.fragrancex.com/_coupon_free__index.html" target="_blank">Free shipping in USA over $35 or no minimum with coupon code FREE</a><br>
+                          <br>
+                          Free Shipping in most countries<br>
+                          <br>
+                          We’re here to help, if you have questions please visit our customer service section. Contact us by email at <a style="text-decoration:none; color:#5f5f5f;" href="mailto:support@fragrancex.com" target="_blank">support@fragrancex.com</a>, manage your email preferences <a style="text-decoration:none; color:#5f5f5f;" href="%%!manage_url%%" target="_blank">here</a> or <a style="text-decoration:none; color:#5f5f5f;" href="%%!unsubscribe_url%%" target="_blank">unsubscribe</a>. Toll&nbsp;free at <a style="text-decoration:none; color:#5f5f5f;" href="tel:18885573738" target="_blank">1-888-557-3738</a> or outside the USA call <a style="text-decoration:none; color:#5f5f5f;" href="tel:0017184826970" target="_blank">001-718-482-6970</a><br>
+                        %%!account_address%% </td>
+                      </tr>
+                    </table>
+                  </td>
                 </tr>
-              </table>
-            </td>
-          </tr>
 
+
+
+
+
+
+          
+            <tr>
+              <td class="h-48 sm:h-32"></td>
+            </tr>
 
 
           </table>
